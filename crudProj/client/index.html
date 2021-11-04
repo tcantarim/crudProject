@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/font-awesome/js/all.js">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <div id="box">
+        <fieldset>
+            <legend>Cadastro de usuários</legend>
+            <form id="formCad" action="">
+                <div class="form-control">
+                    <input type="text" id="clientId" style="display: none;">
+                </div>
+                <div class="form-control">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Qual o seu nome completo?" maxlength="50" size="40">
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite seu email que você quer usar" size="40">
+                </div>
+                <div class="form-control">
+                    <label for="username">Usuário: </label>
+                    <input type="text" id="username" placeholder="Escolha um nome de usuário" size="25">
+                </div>
+                <div class="form-control">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" placeholder="Senha">
+                </div>
+                <div class="form-control">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" placeholder="Quantos anos você tem?">
+                </div>
+                <div class="form-control">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" placeholder="Digite somente números">
+                </div>
+                <button id="btnSubmit" class="btnForm" type="submit">Enviar</button>
+                <button id="btnCancel" class="btnFormRed" type="reset">Cancelar</button>
+                <button id="btnShowClients" class="btnFormGreen" type="button">Clientes cadastrados</button>
+            </form>
+        </fieldset>
+        <div id="showUsers">
+            <fieldset>
+                <legend>Clientes cadastrados</legend>
+                <table id="cadTable">
+                </table>
+            </fieldset>
+        </div>
+    </div>    
+</body>
+</html>

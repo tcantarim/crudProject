@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px 500px;
+}
+
+legend {
+    padding: 0px 5px;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+input {
+    display: block;
+    position: relative;
+    margin: -20px 80px 0px;
+    border:1px solid rgb(120, 120, 120) ;
+    border-radius: 7px ;
+    padding: 5px;
+}
+
+input:focus {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    outline: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btnForm {
+    background-color: rgba(0, 150, 255, 0.8);
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+    color: #FFF;
+    padding: 5px 20px;
+    outline: 0;
+    margin: 5px;
+}
+
+.btnForm:hover {    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btnFormGreen {
+    background-color: rgba(24, 202, 0, 0.801);
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+    color: #FFF;
+    padding: 5px 20px;
+    outline: 0;
+    margin: 5px;
+}
+
+.btnFormGreen:hover {    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btnFormRed {
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+    color: #FFF;
+    padding: 5px 20px;
+    outline: 0;
+    margin: 5px 5px;
+}
+
+.btnFormRed:hover {    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btnRemove {
+    color: rgba(255, 0, 0, 0.8);
+}
+
+.btnRemove:hover {
+    text-shadow: 0px 0px 5px rgba(120, 120, 120, 0.5);
+}
+
+.btnModify {
+    color: green;
+}
+
+.btnModify:hover {
+    text-shadow: 0px 0px 5px rgba(120, 120, 120, 0.5);
+}
+
+#showUsers {
+    display: none;
+    margin: 20px 0px;
+    transition: 1s;
+}
+
+table {
+    display: block;
+    padding: 20px;
+}
+table th {
+    background-color: rgba(0, 150, 255, 0.4);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+table td {
+    background-color: rgba(120, 120, 120, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
